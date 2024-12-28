@@ -1,0 +1,24 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+} */
+h1{
+    color: rgb(27, 27, 70);
+}
+    
+p{
+    color: rgb(207, 42, 42);
+}
+
+#try h1{
+    color: rgb(97, 6, 97);
+}
+
+.try2 h1{
+    color: rgb(86, 82, 82);
+}
+
+.first p, .second p{
+    background-color: rgb(156, 90, 90);
+    color: rgb(21, 21, 91);
+}
