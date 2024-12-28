@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+main {
+    height: 100vh;
+    background-color: black;
+}
+.bar{
+    color: white;
+    background-color: rgba(0, 255, 255,0.3);
+}
+.box{
+    height: 500px;
+    width: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#box1{
+    background-image: url(/practice/image/1266706139157561.jpg);
+    background-position: center;
+    /* background-size: contain; */
+    background-color: rgba(26, 117, 117, 0.3);
+}
+#box2{
+    background-image: url(/practice/image/john\ and\ maus.jpg);
+    /* background-size:contain; */
+    background-position: center;
+    background-color: rgba(48, 65, 65, 0.3);
+}
+
+.bo{
+    height: 500px;
+    width: 500px;
+    background-image: url(/practice/image/1266706139157561.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(250, 235, 215,0.3);
+}
