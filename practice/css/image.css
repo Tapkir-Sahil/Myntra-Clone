@@ -15,6 +15,11 @@ main {
     width: 500px;
     background-size: contain;
     background-repeat: no-repeat;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: aliceblue;
+    text-transform: uppercase;
 }
 
 #box1{
@@ -28,6 +33,7 @@ main {
     /* background-size:contain; */
     background-position: center;
     background-color: rgba(48, 65, 65, 0.3);
+    text-align: right;
 }
 
 .bo{
