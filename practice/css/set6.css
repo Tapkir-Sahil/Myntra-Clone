@@ -1,0 +1,33 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#container{
+    margin: 0%;
+    padding: 0%;
+    background-color: palevioletred;
+    height: 500px;
+    width: 500px;
+    border: 5px solid;
+    border-radius: 15px;
+}
+
+.box1{
+    background-color: darkslategrey;
+    height: 150px;
+    width: 150px;
+    border: 2px solid snow;
+    margin: 5px;
+    border-radius: 5px;
+    float: right;
+}
+
+.box2{
+    background-color: dimgray;
+    height: 150px;
+    width: 150px;
+    border: 2px solid snow;
+    margin: 5px;
+    border-radius: 5px;
+}
