@@ -1,0 +1,88 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+}
+
+header{
+    /* background-color: rgb(87, 5, 5); */
+    height: 3vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 20px;
+    background-color: #2d0001;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(227, 214, 214);
+    background-color: #2d0001;
+    
+}
+
+.image{
+    display: flex;
+    margin: 1px;
+    border: 2px solid white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 475px;
+    width: 50vw;
+}
+
+.container{
+    height: 100px;
+    width: 300px;
+    border: 3px solid wheat;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    color: white;
+    height: 75px;
+    width: 75px;
+    border: 2px solid white;
+    margin: 5px;
+    flex-shrink: 0;
+}
+
+#box2{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#mbox{
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    background-color: darkseagreen;
+}
+
+@media screen and (min-width:300px) and (max-width:400px){
+    #mbox{
+        margin: 5px;
+        height: 50px;
+        width: 50px;
+        border: 2px solid white;
+    background-color: rgb(147, 10, 19);
+    }
+}
+
+@media screen and (min-width:400px){
+    #mbox{
+        margin: 5px;
+        height: 50px;
+        width: 50px;
+        border: 2px solid white;
+    background-color: rgb(4, 12, 59);
+    }
+}
