@@ -1,0 +1,48 @@
+.btn{
+    height: 45px;
+    width: 125px;
+    background-color: rosybrown;
+    font-family: fantasy,Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 0.5ms;
+    transition-timing-function: steps(10);
+}
+
+.btn:hover{
+    height: 35px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: royalblue;
+    cursor:pointer;
+}
+
+.btn:active{
+    background-color: firebrick;
+    cursor: grabbing;
+}
+
+.btn1{
+    height: 45px;
+    width: 125px;
+    background-color: rosybrown;
+    font-family: fantasy,Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: steps(2);
+}
+
+.btn1:hover{
+    height: 35px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: rgb(211, 7, 7);
+    cursor:pointer;
+}
+
+.btn1:active{
+    background-color: rgb(84, 34, 178);
+    cursor: grabbing;
+}
