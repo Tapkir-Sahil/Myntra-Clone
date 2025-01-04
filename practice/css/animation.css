@@ -1,0 +1,102 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.pbar{
+    background-color: rgb(245, 244, 244);
+    height: 1vh;
+    width: 100vw;
+}
+
+.p2bar{
+    background-color:cornflowerblue;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+
+    animation: progressbar 5s infinite;
+}
+
+@keyframes progressbar{
+    0%{
+        width: 0%;
+    }
+    90%{
+        width: 90%;
+    }
+    95%{
+        width: 80%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.box1{
+    background-color: lightseagreen;
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    border: 3px solid darkslategray;
+    border-radius: 3px;
+    position: relative;
+    top: 100px;
+    left: 10px;
+
+    /* ANIMATION */
+    animation: back_and_forth;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    /* TRANSITION */
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transform: rotate(45deg);
+}
+
+@keyframes back_and_forth {
+    from{
+        left: 10px;
+    }
+    to{
+        left: 500px;
+        transform: rotate(0deg);
+    }
+}
+
+.box2{
+    height: 150px;
+    width: 150px;
+    background-color: darkslateblue;
+    border: 3px solid lightseagreen;
+    border-radius: 3px;
+    position: relative;
+    top: 150px;
+    left: 10px;
+    margin: 5px;
+
+    /* ANIMATION */
+    animation: topbottomtop 4s ease-in-out 0s infinite alternate ;
+}
+
+@keyframes topbottomtop {
+    0%{
+        left: 10px;
+        top: 150px;
+    }
+    50%{
+        left: 100px;
+        top: 300px;
+    }
+    100%{
+        left: 300px;
+        top: 150px;
+    }
+}
+
