@@ -72,3 +72,7 @@ header{
     border-radius: 0 5px 5px 0;
     border: 0;
 }
+
+.action_container{
+    display: flex;
+}
