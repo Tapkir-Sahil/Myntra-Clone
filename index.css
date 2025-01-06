@@ -6,10 +6,41 @@
 
 header{
     display: flex;
-    background-color: #7a5757;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
     height: 80px;
 }
 
 .myntra_home{
     height: 45px;
+}
+
+.logo_container{
+    margin-left: 4%;
+}
+
+.nav_bar{
+    display: flex;
+    min-width: 500px;
+    justify-content: space-between;
+}
+
+.nav_bar a{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .3px;
+    text-decoration: none;
+    color: rgb(29, 27, 27);
+    font-weight: 500;
+    
+}
+
+.nav_bar a sup{
+    color: red;
+    font-size: 9px;
+}
+
+.action_bar{
+    margin-right: 4%;
 }
