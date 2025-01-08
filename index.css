@@ -98,6 +98,10 @@ header{
     text-decoration: none;
 }
 
+.action_container a:hover{
+    color: rgb(254, 42, 42);
+}
+
 /* main sections */
 
 .banner_image{
@@ -128,6 +132,10 @@ header{
     width: 250px;
 }
 
+.img_items:hover{
+    border: 5px solid rgb(254, 42, 42);
+}
+
 .footer_container{
     padding: 30px 0 40px 0;
     background-color: #eef2f5;
@@ -153,6 +161,10 @@ header{
     color: #545657;
     font-size: 15px;
     padding-bottom: 5px;
+}
+
+.footer_column a:hover{
+    color: rgb(254, 42, 42);
 }
 
 .copyright{
