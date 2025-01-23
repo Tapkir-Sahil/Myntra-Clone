@@ -1,1 +1,6 @@
 console.log(Math.floor(2.5 + 1.4))
+console.log('You Are No.'+1+' Coder')
+console.log('Hello World '+(2*5)+' Welcome')
+console.log(typeof 5)
+console.log(typeof 'Hello World')
+console.log(typeof true)
