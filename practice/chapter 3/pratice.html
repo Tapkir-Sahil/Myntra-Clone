@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, 
+  initial-scale=1.0">
+  <link rel="stylesheet" href="practice.css">
+  <title>Cricket</title>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <section>
+      <h1 class="hero-tag">
+        Rock Paper Scissor
+      </h1>
+      <div class="btn-choice">
+        <button type="button" onclick="
+          console.log('You Have Chosen ROCK');
+          let randomRock = Math.floor((Math.random()*3));
+          console.log(random);
+          if (random > 0 && random <= 1){
+            alert('You Are Out')
+          }
+          ">ROCK</button>
+        <button type="button" onclick="
+          console.log('You Have Chosen PAPER');
+          let randomPaper = Math.floor((Math.random()*3));
+          console.log(randomPaper);
+          if (randomPaper > 0 && randomPaper == 3){
+            alert('You Are Out')
+          }
+          ">PAPER</button>
+        <button type="button" onclick="
+        console.log('You Have Chosen SCISSOR');
+        let randomScissor = Math.floor((Math.random()*3));
+        console.log(randomScissor);
+        if (randomScissor == 0){
+          alert('You Are Out')
+        }
+        ">SCISSOR</button>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="practice.js"></script>
+</body>
+
+</html>
