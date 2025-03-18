@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARRAYS</title>
+</head>
+<body>
+  <script>
+    let arr= [1,2,3,4,5,6,7,8]
+    console.log(arr);
+    arr.push(9)
+    console.log(arr)
+    console.log(arr.length)
+    console.log(`poped element ${arr.pop()}`);  
+    console.log(arr);
+    arr.unshift(0);
+    console.log(arr)
+    console.log(`shifted elements.${arr.shift()}`)
+    console.log(arr)
+    arr1=[3,45,68,99,4,57,4,54,56,32,55]
+    console.log(`arr1 = ${arr1}`)
+    console.log(arr1.splice(3,6));  
+    console.log(arr1)
+    arr1.sort();
+    console.log(arr1)
+    console.log(arr1.toString());
+    let [a,b,c,d] = arr1;
+    console.log(a + ' ' + b + ' ' + c + ' ' + d);
+  </script>
+</body>
+</html>
