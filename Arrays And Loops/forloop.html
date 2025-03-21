@@ -17,13 +17,19 @@
     <h1>Open console for script</h1>
   </main>
   <script>
-    let n=5;
-    for(let i=0;i<n;i++){
-      for(let j=0;j<i;j++){
-        console.log(i)
-      }
-      console.log('*');
+    let arr=[13,45,767,43,78,44,96,7]
+    sum=0
+    for(let i=0;i<arr.length;i++){
+      console.log(arr[i]);
+      sum+=arr[i];
     }
+    console.log(`Sum Of Array Is:${sum}`)
+
+    let squares=[];
+    for(let i=0;i<arr.length;i++){
+      squares.push(arr[i]*arr[i]);
+    }
+    console.log(squares);
   </script>
 </body>
 </html>

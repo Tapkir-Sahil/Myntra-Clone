@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Break And Continue</title>
+</head>
+<body>
+  <main>
+    <section>
+      <h1><center>
+        Open Console
+      </center></h1>
+    </section>
+  </main>
+  <script>
+    let arr=[1,2,3,4,5,6,7,8,9];
+    for(let i = 0 ;i < arr.length ;i++){
+      console.log(arr[i]);
+      if(arr[i] === 3){
+        break;
+      }
+    }
+    
+    for(let i = 0; i < arr.length; i++){
+      if( arr[i] % 2 == 0){
+        continue;
+      }
+      console.log(arr[i]);
+    }
+  </script>
+</body>
+</html>
