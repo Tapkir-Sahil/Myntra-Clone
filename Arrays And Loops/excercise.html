@@ -1,31 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Excercise</title>
 </head>
+
 <body>
   <main>
     <section>
-      <center><h1>
-        Open Console
-      </h1></center>
+      <center>
+        <h1>
+          Open Console
+        </h1>
+      </center>
     </section>
   </main>
   <script>
-    // Task 1
-    let arr=[5,6];
-    arr.push(7)
-    arr.unshift(4);
-    console.log(arr)
+    console.log('Task 1')
+    // Task 1: Adding numbers before and after array
+    let startarr = [5, 6];
+    startarr.push(7)
+    startarr.unshift(4);
+    console.log(startarr)
 
-    //Task 2
-    let arr1=[1,2,3,5,6,7,8,6,67]
-    function getElement(array,position){
+    console.log('Task 2')
+    //Task 2: Displaying array elements by giving position using method
+    let arr1 = [1, 2, 3, 5, 6, 7, 8, 6, 67]
+    function getElement(array, position) {
       return (arr1[position - 1]);
     }
-    console.log(getElement(arr1,9));
+    console.log(getElement(arr1, 9));
+
+    console.log('Task 3')
+    //Task 3: Slice of array
+    function arrayCopy(arr) {
+      return arr.slice(0, arr.length);
+    }
+    let arr = [1, 2, 3, 4, 5, 6]
+    let arr2 = arrayCopy(arr);
+    arr2[0] = null;
+    console.log(arr);
+    console.log(arr2);
+
+    console.log('Task 4')
+    //Task 4: Return the prime number only 5 using 'break'
+    function searchPrime(num) {
+      for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+          return false
+        }
+      }
+      return true
+    }
+
+    let numbers = 2;
+    let i = 0;
+    while (true) {
+      if (searchPrime(numbers)) {
+        console.log(numbers);
+        i++;
+        if (i >= 5) {
+          break
+        }
+      }
+      numbers++;
+    }
+
+    console.log('Task 5')
+    //Task 5: Create a for loop that print 1 to 10 in reverse order
+    for(let i=10;i>0;i--){
+      console.log(i);
+    }
+
+    console.log('Task 6')
+    //Task 6: Using continue only print positive numbers from the given array
+    let array = [1,-6,5,7,-98]
+    for(let i = 0; i < array.length;i++){
+      if(array[i]<=0){
+        continue
+      }
+      console.log(array[i])
+    }
+
+    console.log('Task 7')
+    //Task 7: Using accumulator pattern concatenate all the strings in the given array
+    let given_array = ['Hello','World','Coding','Is','Fun'];
+    let result = given_array.join(' '); // This is simple method with build in funtion "join"
+    console.log(result)
+    let result2 = '';
+    for(let i = 0; i < given_array.length; i++){ // This is method using for loop
+      result2 += given_array[i] + ' ';
+    }
+    console.log(result2)
   </script>
 </body>
+
 </html>
