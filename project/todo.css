@@ -1,0 +1,26 @@
+*{
+  font-family: 'Courier New', Courier, monospace;
+}
+h1{
+  text-align: center;
+}
+
+#btn-submit{
+  background-color: rgb(8, 196, 89);
+  color: rgb(244, 241, 236);
+  border-radius: 3px;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 1.5px solid black;
+  border-left:1.5px solid black;
+  padding: 5px;
+}
+
+#btn-submit:hover{
+  cursor: pointer;  
+  border: 1px solid black;
+}
+
+#input-box{
+  
+}
