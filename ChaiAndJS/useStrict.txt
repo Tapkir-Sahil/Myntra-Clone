@@ -1,0 +1,76 @@
+"use strict" is a directive that enables strict mode in JavaScript.
+Strict mode helps catch common coding mistakes and "unsafe" actions.
+
+Benefits of Strict Mode:
+1. Eliminates some JavaScript silent errors by changing them to throw errors.
+2. Fixes mistakes that make it difficult for JavaScript engines to perform optimizations.
+3. Prohibits some syntax likely to be defined in future versions of ECMAScript.
+
+Common Changes in Strict Mode:
+- Variables must be declared before use.
+- Assignments to non-writable properties, getters-only properties, non-existent properties, and non-existent variables will throw errors.
+- `this` in functions will be `undefined` if the function is called without an object context.
+
+Assignments to non-writable properties, getters-only properties, non-existent properties, and non-existent variables will throw errors.
+
+Non-writable properties: These are properties of an object that cannot be changed. If you try to assign a new value to such a property, it will throw an error.
+Getters-only properties: These are properties that only have a getter method (no setter). Trying to assign a value to them will also throw an error.
+Non-existent properties: If you try to assign a value to a property that doesn't exist on an object, it will throw an error.
+Non-existent variables: If you try to use a variable that hasn't been declared, it will throw an error.
+this in functions will be undefined if the function is called without an object context.
+
+In JavaScript, this refers to the object that is executing the current function. If a function is called without being attached to an object, this will be undefined.
+
+
+Example code illustrating these points:
+
+'use strict';
+
+// Non-writable property example
+const obj = {};
+Object.defineProperty(obj, 'nonWritable', {
+  value: 42,
+  writable: false
+});
+
+try {
+  obj.nonWritable = 100; // Throws an error
+} catch (e) {
+  console.error(e);
+}
+
+// Getters-only property example
+const person = {
+  get name() {
+    return 'John';
+  }
+};
+
+try {
+  person.name = 'Doe'; // Throws an error
+} catch (e) {
+  console.error(e);
+}
+
+// Non-existent property example
+const anotherObj = {};
+
+try {
+  anotherObj.nonExistent = 123; // Throws an error
+} catch (e) {
+  console.error(e);
+}
+
+// Non-existent variable example
+try {
+  undeclaredVar = 456; // Throws an error
+} catch (e) {
+  console.error(e);
+}
+
+// `this` in functions example
+function showThis() {
+  console.log(this);
+}
+
+showThis(); // undefined
