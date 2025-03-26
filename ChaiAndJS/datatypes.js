@@ -66,5 +66,3 @@ function showThis() {
 showThis(); // undefined
 */
 
-
- 
