@@ -36,6 +36,8 @@ if(true){
   }
 }
 
+
+// Hoisting 
 // console.log(addOne(5))// we can use this function anywhere even before and after intiailization
 function addOne(num){
   return num + 1
