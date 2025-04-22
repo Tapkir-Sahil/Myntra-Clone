@@ -1,3 +1,0 @@
-// truthy values :- 
-
-// falsy values :- 
