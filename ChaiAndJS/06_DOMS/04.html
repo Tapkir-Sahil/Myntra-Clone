@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM FOUR</title>
+</head>
+
+<body style="background-color: black; color: whitesmoke;">
+  <ul class="language">
+    <li>JavaScript</li>
+  </ul>
+</body>
+<script>
+  // Creating With JS 
+  function addLanguage(language) {
+    const li = document.createElement('li')
+    li.innerHTML = `${language}` // this method is risky not prefered
+    document.querySelector('.language').appendChild(li) 
+  }
+  addLanguage('Python')
+  addLanguage('C++')
+
+  function addOptLanguage(langName){
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector('.language').appendChild(li)
+  }
+  addOptLanguage('Golang')
+  addOptLanguage('Swift')
+
+// Editing With JS
+
+const editLanguage = document.querySelector('li:nth-child(5)')
+console.log(editLanguage)
+// editLanguage.innerHTML = 'Ruby' // dont use this
+const newLi = document.createElement('li')
+newLi.textContent = 'Ruby'
+editLanguage.replaceWith(newLi)
+
+// Removing With JS
+const removeElement = document.querySelector('li:nth-child(4)')
+console.log(removeElement) 
+removeElement.remove()
+
+// another method to remove last child 
+const remove2 = document.querySelector('li:last-child')
+remove2.remove()
+</script>
+
+</html>
