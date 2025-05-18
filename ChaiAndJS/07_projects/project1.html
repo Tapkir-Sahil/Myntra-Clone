@@ -4,8 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PROJECT 1</title>
+  <style>
+    span{
+      display: block;
+    }
+    .canvas{
+      /* display: flex; */
+      /* flex-direction: column; */
+      margin: 100px;
+      width: 80%;
+      height: 50%;
+    }
+    .button{
+      /* display: flex;
+      flex-wrap: wrap; */
+      /* flex-direction: row; */
+      height: 100px;
+      width: 100px;
+      border: 2px solid black;
+      /* margin: 10px;
+      padding: 20px; */
+      display: inline-block;
+    }
+  </style>
 </head>
 <body>
-  
+  <div class="canvas">
+    <h1>CHANGE THE COLOR SCHEME</h1>
+    <span class="button" id="blue"></span>
+    <span class="button" id="yellow"></span>
+    <span class="button" id="grey"></span>
+    <span class="button" id="orange"></span>
+    <h2>
+      TRY CLICKING ON BOX
+      <span>
+        TO CHANGE THE COLOR OF THE BOX
+      </span>
+    </h2>
+  </div>
 </body>
 </html>
